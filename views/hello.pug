@@ -1,0 +1,19 @@
+//- VIDEO 5
+extends layout
+
+block content
+	div.wrapper
+		- const upName = name.toUpperCase();
+		p.hello Hello! My name is #{name}
+		span#yo Yoo!!
+		//- img.dog(src="dog.jpg" alt=`Dog ${name}`)
+
+	h2 Hello! #{upName} 
+		em How are you?
+
+	h2
+		| Hello! My name is #{nameQuery}
+
+	h2 
+		//- h. comes from locals
+		| Sale ends #{h.moment().endOf('day').fromNow()} 
